@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "350979825128",
+    "project_id": "cowtest-836ae",
+    "storage_bucket": "cowtest-836ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350979825128:android:d42dbf4f0f74260d45d85d",
+        "android_client_info": {
+          "package_name": "com.example.cow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350979825128-rqc7m6cioepbai5e0rs8n62e6v3j6iah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADJuUUIjk5TAE_xoS9YKUPTnUVNA_a2Nw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350979825128-rqc7m6cioepbai5e0rs8n62e6v3j6iah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

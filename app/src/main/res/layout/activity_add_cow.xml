@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uis.Update">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:padding="20dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button_corner_radius"
+                android:backgroundTint="@color/colorGreen"
+                android:text="Add Cow Details"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/tagNumber"
+                    android:hint="  Tag Number"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="  Name"
+                    android:textAlignment="textStart"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/sex"-->
+<!--                    android:hint="  Sex"-->
+<!--                    android:textAlignment="textStart"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:gravity="center"-->
+<!--                    tools:ignore="RtlCompat" />-->
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:hint="  Sex"
+                    android:textAlignment="textStart"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/breed"
+                    android:hint="  Breed"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:hint="  Birth day"
+                    android:textAlignment="textStart"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/Birthday"
+                    android:hint="dd/mm/yyyy"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/age"
+                    android:hint="  Age"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/joinDate"
+                    android:hint="  Joined Date"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/howObtain"
+                    android:hint="  How Obtained"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <EditText
+                    android:id="@+id/damTagNum"
+                    android:hint="  Dam Tag Number"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/sireNameTag"
+                    android:hint="  Sire name , Tag"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                >
+
+
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGreen"
+                    android:layout_marginTop="10dp"
+                    android:text="Add"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="bold"
+                    tools:ignore="PrivateResource" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

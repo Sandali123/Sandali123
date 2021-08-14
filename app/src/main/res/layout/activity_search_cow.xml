@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Uis.SearchCow">
+
+
+    <EditText
+        android:id="@+id/searchTagNumTxt"
+        android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="  Tag Number"
+        android:drawableLeft="@drawable/searchicon"
+        />
+
+    <LinearLayout
+        android:id="@+id/noRecordTxt"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have No records"
+        android:textSize="15dp"
+        android:textColor="@color/colorBackgroundyellow"
+
+        />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/addRecordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:visibility="visible"
+        android:layout_marginTop="200dp"
+        >
+
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_corner_radius"
+            android:backgroundTint="@color/colorBackgroundyellow"
+            android:text="+  Add"
+            />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/srcScroll"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/nameSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Sex"/>
+
+                <TextView
+                    android:id="@+id/sexSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Breed"/>
+
+                <TextView
+                    android:id="@+id/breedNumSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Birth Date"/>
+
+                <TextView
+                    android:id="@+id/BirthdaySrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Age"/>
+
+                <TextView
+                    android:id="@+id/ageSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Joined When"/>
+
+                <TextView
+                    android:id="@+id/joinDateSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="How Obtained"/>
+
+                <TextView
+                    android:id="@+id/howObtainSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="60dp">-->
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_marginLeft="10dp"-->
+            <!--                            android:layout_marginRight="10dp"-->
+            <!--                            android:text="Tag Number" />-->
+            <!--    -->
+            <!--                        <EditText-->
+            <!--                            android:id="@+id/damTagNumSrch"-->
+            <!--                            android:layout_width="match_parent"-->
+            <!--                            android:layout_height="60dp"-->
+            <!--                            android:gravity="center"-->
+            <!--                            />-->
+            <!--    -->
+            <!--                    </LinearLayout>-->
+            <!--    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Sire name, Tag"/>
+
+                <TextView
+                    android:id="@+id/sireNameTagSrch"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGreen"
+                    android:layout_marginTop="10dp"
+                    android:text="Delete"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="bold"
+                    tools:ignore="PrivateResource" />
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGreen"
+                    android:layout_marginTop="10dp"
+                    android:text="Update"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="bold"
+                    tools:ignore="PrivateResource" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

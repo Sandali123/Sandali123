@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uis.Update">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:padding="20dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button_corner_radius"
+                android:backgroundTint="@color/colorGreen"
+                android:text="Add Farmer Details"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:hint="  Farmer Name"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="  Age"
+                    android:inputType="number"
+                    android:textAlignment="textStart"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/mobileNumber"
+                    android:hint="  Mobile Number"
+                    android:textAlignment="textStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                >
+
+
+
+                <Button
+                    android:id="@+id/addfarmerBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorGreen"
+                    android:layout_marginTop="10dp"
+                    android:text="Add"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="bold"
+                    tools:ignore="PrivateResource" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
